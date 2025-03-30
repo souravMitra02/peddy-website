@@ -4,12 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paddy-Website</title>
+    <link rel="shortcut icon" href="images/logo.webp" type="image/jpg">
     <!-- Tailwind css CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--DaisyUI CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/383b38ed75.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <header class="px-20">
+    <nav>
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+              </div>
+              <div class="flex gap-3">  
+                <img src="images/logo.webp" alt="">
+              <a class="text-2xl font-bold">Peddy</a>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex text-gray-500">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                    <a>Shop</a>
+                </li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class=""><i class="fa-regular fa-circle-user fa-xl"></i></a>
+            </div>
+          </div>
+    </nav>
+    <div>
+        <div class="text-center space-y-4">
+            <p class="font-semibold">Bringing Families Together ❤️‍🔥 </p>
+            <h2 class="text-4xl font-bold leading-[1.5]"> Your Path to Adoption <br> Starts Here</h2>
+            <p>Building loving homes for children in need, guiding families through every step of adoption with care, <br> support, and unwavering dedication to a brighter future.</p>
+            <button class="bg-[#0E7A81] px-5 py-2  rounded-lg hover:cursor-pointer text-white"><a href="">View More</a></button>
+        </div>
+        <div>
+            <img class="w-7/12 mx-auto" src="images/pet.webp" alt="">
+        </div>
+    </div>
+  </header>
+  <main class="px-20 mt-10">
+    <div>
+        <div class="text-center space-y-3">
+            <h2 class="font-bold text-2xl">Adopt  Your  Best Friend</h2>
+            <p>Adopt Your Best Friend and give them a loving home filled with care, joy, and companionship. <br> Every pet deserves a second chance to be part of a happy family.</p>
+        </div>
+        <div id="category-container" class="flex justify-center gap-3 mt-10">
+
+        </div>
+        <div id="pets-container" class="grid grid-cols-3 gap-5">
+
+        </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="app.js/index.js"></script>
 </body>
 </html>
