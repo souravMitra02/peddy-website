@@ -59,13 +59,83 @@
         <div id="category-container" class="flex justify-center gap-3 mt-10">
 
         </div>
-        <div id="pets-container" class="grid grid-cols-3 gap-5">
 
+        <div class="mt-3 mb-3 text-center" id="data-loading">
+          <span class="loading loading-dots loading-xl "></span>
+  
+          </div>
+
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-xl">Best Deal For you</h3>
+            <button class="bg-[#0E7A81] px-5 py-2  rounded-lg hover:cursor-pointer text-white">Sort by Price</button>
+          </div>
+      <div id="pets-container" class="grid grid-cols-3 mt-5 gap-5"></div>
+
+<dialog id="pet_details" class="modal">
+  <div  class="modal-box">
+    <div id="modal_container" class="">
+
+
+    </div>
+    
+    <div class="bg-[#0E7A8133] text-[#0E7A81] rounded-full text-center mt-2">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class=" px-4  font-semibold  hover:cursor-pointer py-2">Cancel</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+        <div id="error" class="bg-[#13131308] p-10 rounded-3xl">
+          <img class="mx-auto" src="images/error.webp" alt="">
+       <div class="text-center space-y-4">
+        <h2 class="font-bold text-3xl">No Information Available</h2>
+        <p class="text-lg">No Information Available at this moment, <br> but we are constantly updating. Stay tuned for the latest updates and details soon......</p>
         </div>
+       </div>
+      
     </div>
   </main>
-  <footer>
 
+<!-- Home
+About Us
+Animals
+Foundation
+Contact -->
+
+
+
+  <footer class="justify-between footer sm:footer-horizontal bg-[#131313] text-white p-10 mt-5">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Location: av. Washington 165, NY CA 54003</a>
+      <a class="link link-hover">Phone: +31 85 964 47 25</a>
+      <a class="link link-hover">Email: info@yourdomain.com</a>
+      <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM </a>
+    </nav>
+    <nav>
+      <h6 class="footer-title font-bold">Useful Links</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">About</a>
+      <a class="link link-hover">Animals</a>
+      <a class="link link-hover">Foundation</a>
+      <a class="link link-hover">Contact</a>
+    </nav>
+    <form>
+      <h6 class="footer-title">Drop a Message</h6>
+      <fieldset class="">
+        <div class="space-y-3">
+          <input
+            type="text"
+            placeholder="username@site.com"
+            class="py-2 bg-[#131313] border-none px-2 rounded-2xl" />
+          <div class="bg-[#0E7A81] px-5 py-2 text-center rounded-2xl">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
   </footer>
   <script src="app.js/index.js"></script>
 </body>
